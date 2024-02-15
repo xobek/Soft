@@ -1,4 +1,9 @@
+#include "stpch.h"
+
 #include "Application.h"
+
+#include "./Events/ApplicationEvent.h"
+#include "./Log.h"
 
 namespace Soft {
 
@@ -12,6 +17,9 @@ namespace Soft {
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1980, 1080);
+		ST_TRACE(e);
+
 		while (true);
 	}
 }

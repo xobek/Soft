@@ -1,6 +1,5 @@
 #pragma once
 
-
 #ifdef ST_PLATFORM_WINDOWS 
 	#ifdef ST_BUILD_DLL
 		#define SOFT_API __declspec(dllexport)
@@ -8,3 +7,5 @@
 		#define SOFT_API __declspec(dllimport)
 	#endif
 #endif
+
+#define BIT(X) (1 << X)
