@@ -2,8 +2,8 @@
 
 #include "Application.h"
 
-#include "./Events/ApplicationEvent.h"
-#include "./Log.h"
+#include "Events/ApplicationEvent.h"
+#include "Log.h"
 
 namespace Soft {
 

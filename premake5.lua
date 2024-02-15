@@ -10,6 +10,11 @@ workspace "Soft"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Soft/vendor/GLFW/include"
+
+include "Soft/vendor/GLFW"
+
 project "Soft"
 	location "Soft"
 	kind "SharedLib"
@@ -29,7 +34,15 @@ project "Soft"
 
 	includedirs 
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

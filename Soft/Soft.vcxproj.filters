@@ -35,6 +35,8 @@
       <Filter>Soft</Filter>
     </ClInclude>
     <ClInclude Include="src\stpch.h" />
+    <ClInclude Include="src\Soft\Window.h" />
+    <ClInclude Include="src\Soft\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Soft\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Soft</Filter>
     </ClCompile>
     <ClCompile Include="src\stpch.cpp" />
+    <ClCompile Include="src\Soft\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
