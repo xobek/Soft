@@ -1,6 +1,4 @@
 # Soft
-Soft is an open source C++ engine for games and rendering.
-
 ## Status
 Soft is currently a work in progress.
 
